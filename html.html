@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Blank template</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+        <style>
+h1 {text-align: center;}
+h2 {text-align: center;}
+body {text-align: center;}
+form {text-align: center;}
+p {text-align: center;}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3703881625341596"
+     crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3703881625341596"
+     crossorigin="anonymous"></script>
+<!-- lik -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3703881625341596"
+     data-ad-slot="2356217364"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<button onclick="getLocation()">getLocation</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } catch {
+    x.innerHTML = err;
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+
+        <h1>My awesome space</h1>
+        <img src="ki.jpg" alt="W3Schools.com" style="width:50%">
+        <h2>JavaScript Validation</h2>
+
+<form name="myForm" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="prompt">
+</form>
+        <!-- Load external JavaScript -->
+        
+        <script src="scripts.js"></script>
+        
+    </body>
+
+</html>
